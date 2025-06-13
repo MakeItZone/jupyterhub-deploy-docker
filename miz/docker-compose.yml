@@ -4,6 +4,10 @@
 # JupyterHub docker compose configuration file
 version: "3"
 
+# as per portainer: to enable rebuilding the image of an image 
+# if already present on standalone Docker environment
+pull_policy: build
+
 services:
   hub:
     build:
