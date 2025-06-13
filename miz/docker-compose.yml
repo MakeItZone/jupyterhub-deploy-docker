@@ -5,6 +5,9 @@
 version: "3"
 
 services:
+  notebook:
+    build: ./miz-notebook
+
   hub:
     build:
       context: .
