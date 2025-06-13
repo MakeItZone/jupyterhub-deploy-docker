@@ -7,15 +7,16 @@ version: "3"
 services:
   hub:
     build:
-      # as per portainer: to enable rebuilding the image of an image 
-      # if already present on standalone Docker environment
-      pull_policy: build
       context: .
       dockerfile: Dockerfile.jupyterhub
       args:
         JUPYTERHUB_VERSION: latest
     restart: always
     image: jupyterhub
+    # as per portainer: to enable rebuilding the image of an image 
+    # if already present on standalone Docker environment
+    pull_policy: build
+
     container_name: jupyterhub
     networks:
       - jupyterhub-network
