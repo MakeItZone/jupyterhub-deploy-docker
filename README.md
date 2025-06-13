@@ -1,4 +1,11 @@
-# jupyterhub-deploy-docker
+# jupyterhub deployment at MIZ
+
+Based on [jupyterhub/jupyterhub-deploy-docker](https://github.com/jupyterhub/jupyterhub-deploy-docker).
+
+A simple multi-user deployment for internal use at MIZ.
+
+
+## Original README
 
 **jupyterhub-deploy-docker** provides a reference
 deployment of [JupyterHub](https://github.com/jupyterhub/jupyterhub), a
